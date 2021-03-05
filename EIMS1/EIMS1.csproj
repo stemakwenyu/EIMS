@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34EFBC8C-C74E-4E44-9D13-C42725857191}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EIMS1</RootNamespace>
+    <AssemblyName>EIMS1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conn.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E:\FrsmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E:\FrsmSplash.Designer.cs">
+      <DependentUpon>FrsmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm2sPLASH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm2sPLASH.Designer.cs">
+      <DependentUpon>Frm2sPLASH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcademic_Year.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcademic_Year.Designer.cs">
+      <DependentUpon>frmAcademic_Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmnistrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmnistrator.Designer.cs">
+      <DependentUpon>frmAdmnistrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCenter.Designer.cs">
+      <DependentUpon>frmCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCourse.Designer.cs">
+      <DependentUpon>frmCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartment.Designer.cs">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExam.Designer.cs">
+      <DependentUpon>frmExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExaminer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExaminer.Designer.cs">
+      <DependentUpon>frmExaminer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFaculty.Designer.cs">
+      <DependentUpon>frmFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgram.Designer.cs">
+      <DependentUpon>frmProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudent.Designer.cs">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentExam.Designer.cs">
+      <DependentUpon>frmStudentExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUniversity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUniversity.Designer.cs">
+      <DependentUpon>frmUniversity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYear_Of_Study.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYear_Of_Study.Designer.cs">
+      <DependentUpon>frmYear_Of_Study.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E:\FrsmSplash.resx">
+      <DependentUpon>FrsmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm2sPLASH.resx">
+      <DependentUpon>Frm2sPLASH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcademic_Year.resx">
+      <DependentUpon>frmAcademic_Year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmnistrator.resx">
+      <DependentUpon>frmAdmnistrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCenter.resx">
+      <DependentUpon>frmCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCourse.resx">
+      <DependentUpon>frmCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartment.resx">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExam.resx">
+      <DependentUpon>frmExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExaminer.resx">
+      <DependentUpon>frmExaminer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFaculty.resx">
+      <DependentUpon>frmFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgram.resx">
+      <DependentUpon>frmProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudent.resx">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentExam.resx">
+      <DependentUpon>frmStudentExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUniversity.resx">
+      <DependentUpon>frmUniversity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYear_Of_Study.resx">
+      <DependentUpon>frmYear_Of_Study.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-login-icon-29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20201108_103407.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20201201_122215.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e5c6aeb82f4b1e8d0cf64e00bc5add24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audit-exam-survey-report-icon-any-use-like-print-website-etc-audit-exam-survey-report-icon-contract-sign-175870503.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1238249-education-graduate-science-student-study-teaching-icon-icon-student-studying-science-png-512_512_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e5c6aeb82f4b1e8d0cf64e00bc5add241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver-license-test-007-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e5c6aeb82f4b1e8d0cf64e00bc5add242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_icon-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %283%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %283%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %283%293.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
